@@ -15,25 +15,30 @@
 
 // Global Variables
 const nav_bar = document.getElementById("navbar__list");
-const sections = document.querySelectorAll("section");
 const nav_links = ["Top","Section 1", "Section 2", "Section 3", "Section 4"];
 
 // build the nav
 nav_links.forEach((nav_link, b) => {
-  let list = document.createElement("li");
-  let link = document.createElement("a");
+  let list = document.createElement("li"); //creates the <li> items
+  let link = document.createElement("a"); //creates the <a> items
   link.innerHTML = nav_link;
   link.setAttribute("id", `section`);
   link.href = `#section${b+0}`;
-  list.appendChild(link)
-  nav_bar.appendChild(list);
+  list.appendChild(link) //adds the <a> inside the <li>
+  nav_bar.appendChild(list); //adds the <li> inside the nav_bar<ul>
 });
 
 // Add class 'active' to section when near top of viewport
 
+// What's being viewed
+const section = document.querySelector('.landing__container');
+const page = section.getBoundingClientRect();
 
-// Scroll to anchor ID using scrollTO event
-
+document.addEventListener('scroll', function (){
+  const isInViewport = page.top <= 0 &&
+          page.top <= 0 ;
+  console.log(isInViewport);
+});
 
 /**
  * End Main Functions
