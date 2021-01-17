@@ -20,11 +20,13 @@ const nav_links = ["Top","Section 1", "Section 2", "Section 3", "Section 4"];
 
 // build the nav
 nav_links.forEach((nav_link, b) => {
+  let list = document.createElement("li");
   let link = document.createElement("a");
   link.innerHTML = nav_link;
   link.setAttribute("id", `section`);
   link.href = `#section${b+0}`;
-  nav_bar.appendChild(link);
+  list.appendChild(link)
+  nav_bar.appendChild(list);
 });
 
 // Add class 'active' to section when near top of viewport
