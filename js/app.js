@@ -16,14 +16,14 @@
 // Global Variables
 const nav_bar = document.getElementById("navbar__list");
 const sections = document.querySelectorAll("section");
-const nav_links = ["Section 1", "Section 2", "Section 3", "Section 4"];
+const nav_links = ["Top","Section 1", "Section 2", "Section 3", "Section 4"];
 
 // build the nav
 nav_links.forEach((nav_link, b) => {
-  const link = document.createElement("a");
+  let link = document.createElement("a");
   link.innerHTML = nav_link;
-  link.setAttribute("id", `test111`);
-  link.href = `#section${b+1}`;
+  link.setAttribute("id", `section`);
+  link.href = `#section${b+0}`;
   nav_bar.appendChild(link);
 });
 
