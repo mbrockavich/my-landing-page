@@ -16,7 +16,7 @@
 // Global Variables
 const nav_bar = document.getElementById("navbar__list");
 const sections = document.querySelectorAll("section");
-const nav_links = ["Section 1", "Section 2", "Section 3"];
+const nav_links = ["Section 1", "Section 2", "Section 3", "Section 4"];
 
 // build the nav
 nav_links.forEach((nav_link, b) => {
