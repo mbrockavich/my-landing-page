@@ -13,27 +13,15 @@
  *
 */
 
-/**
- * Define Global Variables
- *
-*/
+// Global Variables
+const nav_bar = document.getElementById("navbar__list")
+const sections = document.querySelectorAll("section")
 
-
-/**
- * End Global Variables
- * Start Helper Functions
- *
-*/
-
-
-
-/**
- * End Helper Functions
- * Begin Main Functions
- *
-*/
 
 // build the nav
+
+
+//<li><a id="section_link" href="#section1">Section 1</a></li>
 
 
 // Add class 'active' to section when near top of viewport
