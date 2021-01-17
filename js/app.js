@@ -14,15 +14,18 @@
 */
 
 // Global Variables
-const nav_bar = document.getElementById("navbar__list")
-const sections = document.querySelectorAll("section")
-
+const nav_bar = document.getElementById("navbar__list");
+const sections = document.querySelectorAll("section");
+const nav_links = ["Section 1", "Section 2", "Section 3"];
 
 // build the nav
-
-
-//<li><a id="section_link" href="#section1">Section 1</a></li>
-
+nav_links.forEach((nav_link, b) => {
+  const link = document.createElement("a");
+  link.innerHTML = nav_link;
+  link.setAttribute("id", `test111`);
+  link.href = `#section${b+1}`;
+  nav_bar.appendChild(link);
+});
 
 // Add class 'active' to section when near top of viewport
 
