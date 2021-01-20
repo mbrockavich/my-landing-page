@@ -1,4 +1,4 @@
-My Landing Page
+<h1>My Landing Page</h1>
 
 Description:
 This is the second project in the Udacity Front End Web Developer nanodegree program.
