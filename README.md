@@ -1,6 +1,6 @@
 <h1>My Landing Page</h1>
 
-<h2>Description:<h2>
+<h2>Description:</h2>
 This is the second project in the Udacity Front End Web Developer nanodegree program.
 
 <h2>Project Objectives:</h2>
