@@ -36,7 +36,7 @@ function activeClass(){
     let section = document.querySelector(`#section${c+0}`);
     let bounding = section.getBoundingClientRect();
 //    console.log(sections, bounding.top, bounding.bottom);
-    if (bounding.top < 1 && bounding.bottom > 1){
+    if (bounding.top < 0 && bounding.bottom > 1){
       section.classList.add('your-active-class');
     }
     else {
