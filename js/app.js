@@ -48,17 +48,3 @@ function activeClass(){
 };
 
 document.addEventListener("scroll", activeClass) // run function on scroll
-
-
-
-/**
- * End Main Functions
- * Begin Events
- *
-*/
-
-// Build menu
-
-// Scroll to section on link click
-
-// Set sections as active
