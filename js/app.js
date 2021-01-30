@@ -23,11 +23,12 @@ nav_links.forEach((nav_link, b) => {
   let list = document.createElement("li"); //creates the <li> items
   let link = document.createElement("a"); //creates the <a> items
   link.innerHTML = nav_link;
-  link.setAttribute("id", `section`);
+  link.setAttribute("id", `nav${b+0}`);
   link.href = `#section${b+0}`;
   list.appendChild(link) //adds the <a> inside the <li>
   nav_bar.appendChild(list); //adds the <li> inside the nav_bar<ul>
 });
+
 
 // function for my-active-class
 function activeClass(){
